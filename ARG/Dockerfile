@@ -1,6 +1,6 @@
 FROM almalinux:9
-ENV course="Devops with AWS" \
-    duration="120 hrs"
+ARG course
+ARG duration
 RUN echo "Course: $course, duration: $duration"
 CMD ["sleep","100"]
 
